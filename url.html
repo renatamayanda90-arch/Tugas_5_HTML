@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form URL<h2>
+    <form action="proses.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>URL</legend>
+        <!-- 1. Text Field dengan placeholder, value, dan required -->
+            <label for="nama">URL:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan URL" required><br><br>
+        <!-- 2.Date Field dengan placeholder dan required -->
+            <label for="Tanggal">Tanggal:</label>
+            <input type="Date" id="Tanggal" name="Tanggal" placeholder="mm/dd/yyyy" required><br><br>
+       <!-- 3. Time Field dengan placeholder, value, dan required -->
+            <label for="waktu">Nama Lengkap:</label>
+            <input type="Time" id="waktu" name="waktu" placeholder="--:-- --" required><br><br>
+        <!-- 4. Text Field dengan placeholder, value, dan required -->
+            <label for="nama">Jumlah:</label>
+            <input type="text" id="nama" name="nama" placeholder="" required><br><br> 
+        <!-- Tombol Submit -->
+        <button type="submit">send</button>
+        <button type="submit">Reset</button>
+      </fieldset>
+</body>
+</html
