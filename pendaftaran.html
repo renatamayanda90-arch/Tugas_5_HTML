@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Form Pendaftaran<h2>
+    <form action="proses.php" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Pendaftaran Siswa</legend>
+        
+            <!-- 1. Text Field dengan placeholder, value, dan required -->
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required><br><br>
+            <!-- 2.Text Field dengan placeholder dan required -->
+            <label for="NIS">NIS:</label>
+            <input type="Text" id="NIS" name="NIS" placeholder="Masukkan NIS" required><br><br>
+            <!-- 3. Radio Button (Pilih salah satu) dengan value & required -->
+            <label>Jenis Kelamin:</label>
+            <input type="radio" id="jk_l" name="gender" value="Laki-laki" required>
+            <label for="jk_l">Laki-laki</label>
+            <input type="radio" id="jk_p" name="gender" value="Perempuan">
+            <label for="jk_p">Perempuan</label><br><br>
+            <!-- 4.Date Field dengan placeholder dan required -->
+            <label for="Tanggal">Tanggal Lahir:</label>
+            <input type="Date" id="Tanggal" name="Tanggal" placeholder="mm/dd/yyyy" required><br><br>
+            <!-- 5. Dropdown (Select & Option) dengan value -->
+            <label for="jurusan">Jurusan:</label>
+            <select id="jurusan" name="jurusan" required>
+                <option value="">-- Pilih Jurusan --</option>
+                <option value="RPL">Rekayasa Perangkat Lunak (RPL)</option>
+                <option value="TKR">Teknik Kendaraan Ringan (TKR)</option>
+                <option value="TKJ">Teknik Komputer & Jaringan (TKJ)</option>
+                <option value="TSM">Teknik Sepeda Motor (TSM)</option>
+           </select><br><br>
+           <!-- 6. Textarea dengan placeholder dan required -->
+            <label for="alamat">Alamat:</label><br>
+            <textarea id="alamat" name="alamat" rows="4" cols="40" placeholder="Tuliskan alamat rumah lengkap di sini..." required></textarea><br><br>
+           <input type="file" name"foto" accept="image"/*"><br><br>
+           <input type="checkbox" id="jk_l" name="penyetujun" value="saya menyetujui data yang saya masukkan" required>
+           <label for="jk_l">Saya menyetujui data yang saya masukkan</label><br><br>
+        <!-- Tombol Submit -->
+        <button type="submit">Daftar</button>
+        <button type="submit">Reset</button>
+        </fieldset>
+    </form>
+</body>
+</html>
